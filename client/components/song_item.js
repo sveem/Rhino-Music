@@ -1,7 +1,9 @@
 import React from 'react';
+import spotify from '../../spotifyData.js';
 
-const SongItem = (props) => {
-  const songImg = props.tracks.items[0].external_urls.images[2].url;
+const SongItem = () => {
+  const songImg = window.spotify.album.images[1].url;
+  console.log(window.spotify)
   return (
     <li className="list-group-item">
       <div className="song-list-media">
@@ -10,7 +12,7 @@ const SongItem = (props) => {
         </div>
 
         <div className="song-body">
-          <div className="song-heading">{props.tracks.item[0].name}</div>
+          <div className="song-heading">{window.spotify.name}</div>
         </div>
       </div>
     </li>

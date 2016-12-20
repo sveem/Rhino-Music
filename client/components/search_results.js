@@ -1,13 +1,18 @@
 import React from 'react';
-import SearchBar from './searchbar';
+import spotify from '../../spotifyData.js';
+import SongItem from './song_item';
+//import SearchBar from './searchbar';
 
-const SearchResults = (props) => {
-  console.log('SearchResutls', props);
-
-  const songItem = props.
+const SearchResults = () => {
+  console.log('SearchResutls', window.spotify);
+  const songUrl = window.spotify;
+  console.log(songUrl);
+    
   return (
-    <div>Some Data</div>
+    <ul className="col-md-8 list-group">
+      someData
+    </ul>
     );	
 } 
-export default SearchResults
+export default SearchResults;
 
