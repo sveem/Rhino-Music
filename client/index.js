@@ -3,12 +3,11 @@ import React, { Component } from 'react'; //find node mod named 'react' and put 
 import ReactDOM from 'react-dom';
 // import Routes from './routes';
 import SearchBar from './components/searchbar'
-// import SearchResults from './components/search_results'
+import SearchResults from './components/search_results'
 // import RecList from './components/rec_list'
 // import SongItem from './components/song_item'
 
 class App extends Component {
->>>>>>> searchbarData
 
  constructor(props) {
     super(props);

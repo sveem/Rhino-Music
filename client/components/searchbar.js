@@ -33,6 +33,7 @@ class SearchBar extends Component {
           })
       }).then(function(resp) {
         resp.json().then(function(data){
+          console.log("DATA", data)
          	return data
          })
 

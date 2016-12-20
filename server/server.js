@@ -11,14 +11,14 @@ var localStrategy = require('passport-local').Strategy;
 var app = express();
 module.exports = app;
 
-require('./config/passport')(passport);
+// require('./config/passport')(passport);
 app.use(bodyParser.json() );
 app.use(express.static(path.join(__dirname, '/../client')));
 app.use(cookieParser());
 app.use(session({secret:"someSecret"}))
 app.use(passport.initialize());
 app.use(passport.session());
-require('./routes.js')(app, passport);
+// require('./routes.js')(app, passport);
 //app.use(router);
 
 var port = process.env.PORT || 3005;
