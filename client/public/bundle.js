@@ -96,7 +96,8 @@
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement(_searchbar2.default, null)
+	        _react2.default.createElement(_searchbar2.default, null),
+	        _react2.default.createElement(_search_results2.default, null)
 	      );
 	    }
 	  }]);
@@ -32262,6 +32263,8 @@
 	var _react2 = _interopRequireDefault(_react);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	console.log(dummyData);
 
 	exports.default = rec_list;
 
