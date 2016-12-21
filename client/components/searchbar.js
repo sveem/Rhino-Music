@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import 'whatwg-fetch'
 // import Router {router, browserHistory} from 'react-router';
 // import Routes from './routes';
-
+import SearchResult from './search_results'
 
 class SearchBar extends Component {
 
