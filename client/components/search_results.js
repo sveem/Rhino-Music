@@ -1,12 +1,19 @@
 import React from 'react';
-import SearchBar from './searchbar';
+import spotify from '../../spotifyData.js';
+import SongItem from './song_item';
+//import SearchBar from './searchbar';
+//Vlist
+const SearchResults = () => {
 
-const SearchResults = (props) => {
-  console.log("SearchResutls", props);
+  // console.log('SearchResutls', window.spotify);
+  // const songUrl = window.spotify;
+  // console.log(songUrl);
+    
   return (
-    <div>
-      <div>Some Data</div>
-    </div>
+    <ul className="col-md-4 list-group">
+     someData
+    </ul>
   );	
 } 
 export default SearchResults;
+

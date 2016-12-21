@@ -20,6 +20,7 @@ app.use(bodyParser.urlencoded({
   extended:true
 }));
 app.use(bodyParser.json());
+// require('./config/passport')(passport);
 app.use(express.static(path.join(__dirname, '/../client')));
 app.use(cookieParser());
 app.set('view engine', 'ejs');
@@ -32,6 +33,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
 require('./routes.js')(app, passport);
+
 //app.use(router);
 var port = process.env.PORT || 3005;
 app.listen(port,(err) => {

@@ -1,4 +1,4 @@
-module.exports = {
+window.spotify = {
   "album" : {
     "album_type" : "album",
     "artists" : [ { //ARRAY 1
@@ -13,7 +13,7 @@ module.exports = {
     } ], //ARRAY 1
     "available_markets" : [ "CA", "MX", "US" ],
     "external_urls" : {
-      "spotify" : "https://open.spotify.com/album/0GTrr2N5dR11RqBlewYgBi"
+      "spotify" : "https://open.spotify.com/album/0GTrr2N5dR11RqBlewYgBi" //VIP
     },
     "href" : "https://api.spotify.com/v1/albums/0GTrr2N5dR11RqBlewYgBi",
     "id" : "0GTrr2N5dR11RqBlewYgBi",
