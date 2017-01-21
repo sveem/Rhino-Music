@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const path = require('path')
+const path = require('path');
 const bcrypt= require('bcrypt-node');
 const request = require('request');
 const nytApi = require('./API/nytApi.js');
@@ -37,6 +37,7 @@ module.exports = function(app, passport) {
       method: "GET"
     },
     function(error, response, body) {
+      // console.log("SOngKinck API", body);
       if(!error && response.statusCode === 200) {
         var bodyParsed = JSON.parse(body);
         res.send(bodyParsed)
@@ -402,9 +403,11 @@ module.exports = function(app, passport) {
     app.post('/api/changePassword', isLoggedIn, (req, res) => {
       if(req.body.newPassword === '') {
         res.send("Nothing is updated");
-    } else {
+    }
+    else {
     let newPassword = req.body.newPassword;
     Users.getUserById(passport.user.id).then((userInfo) => {
+      console.log('USER INFO : ', userInfo)
       if(userInfo.password) {
         newPassword = bcrypt.hashSync(newPassword, null, null);
         Users.updatePassword(newPassword, passport.user.id).then((updated) => {
@@ -452,7 +455,7 @@ module.exports = function(app, passport) {
       sendEvents = (arr) => {
         console.log("EVENTSARRAY", arr);
         res.send(arr);
-      };
+      }
     });
   });
   //========================>
@@ -461,7 +464,7 @@ module.exports = function(app, passport) {
   //========================>
     app.get('api/deleteEvent', isLoggedIn, (req, res) => {
       
-    });
+    })
   //========================>
 
   //GOOGLE ROUTES
