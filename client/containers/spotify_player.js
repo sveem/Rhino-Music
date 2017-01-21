@@ -31,7 +31,3 @@ const mapStateToProps = (state) => {
 }
 
 export default connect(mapStateToProps,null)(MusicPlayer)
-
-
-// "spotify:track:7vFv0yFGMJW3qVXbAd9BK9"
-//src={`https://embed.spotify.com/?uri=${props.songUri}`}

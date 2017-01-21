@@ -31,8 +31,6 @@ const styles = {
   }
 };
 
-
-
 class Navigation extends Component {
   constructor(props) {
     super(props);

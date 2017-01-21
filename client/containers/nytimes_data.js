@@ -9,7 +9,6 @@ class nyTimesData extends Component {
   super(props);
  }
 
-
 render () {
   return (
     <div>

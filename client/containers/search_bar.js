@@ -5,8 +5,7 @@ import fetchSongs  from '../actions/index';
 import fetchNews from '../actions/news_nytimes';
 import fetchVideos  from '../actions/youtube.js';
 import  fetchEvents  from '../actions/events';
-// import Redux from 'react-redux';
-// console.log("REDUX", {connect});
+
 import Paper from 'material-ui/Paper';
 import FlatButton from 'material-ui/FlatButton';
 import FontIcon from 'material-ui/FontIcon';
@@ -27,8 +26,6 @@ const style = {
     paddingBottom: 5
   },
   button: {
-    // margin: 12,
-    // backgroundColor: "#D8C2FF"
     backgroundColor: "#B7B13A"
   },
 };

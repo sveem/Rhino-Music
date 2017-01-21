@@ -15,7 +15,6 @@ import Remove from 'material-ui/svg-icons/content/remove-circle';
 import Paper from 'material-ui/Paper';
 import Circle from 'material-ui/svg-icons/content/add-circle';
 
-
 const style = {
   paper: {
   height: "auto",
